@@ -25,8 +25,8 @@ function MyStack() {
       <Stack.Screen
         name="ListScreen"
         component={ListScreen}
-        options={({}) => ({
-          title: null,
+        options={() => ({
+          title: '',
           headerBackground: props => <HeaderBackground {...props} />,
           headerLeft: props => <NavigationBack {...props} />,
         })}
