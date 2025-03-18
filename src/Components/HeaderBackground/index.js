@@ -13,7 +13,7 @@ const HeaderBackground = React.memo(props => {
     windowHeight: height,
   };
   const screenStyles = styles();
-  const appColor = 'blue';
+  const appColor = 'yellow';
   const backgroundColor = [
     Color(appColor).lighten(0.11).hex(),
     appColor,

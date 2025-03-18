@@ -5,12 +5,16 @@ import HomeScreen from './src/Components/HomeScreen';
 import ListScreen from './src/Components/ListScreen';
 import HeaderBackground from './src/Components/HeaderBackground';
 import NavigationBack from './src/Components/NavigationBack';
+import {ScreenContextProvider} from './src/ScreenContext';
+import EpubReader from './src/Components/EpubReader';
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <MyStack />
-    </NavigationContainer>
+    <ScreenContextProvider>
+      <NavigationContainer>
+        <MyStack />
+      </NavigationContainer>
+    </ScreenContextProvider>
   );
 };
 
@@ -30,6 +34,11 @@ function MyStack() {
           headerBackground: props => <HeaderBackground {...props} />,
           headerLeft: props => <NavigationBack {...props} />,
         })}
+      />
+      <Stack.Screen
+        name={'EpubReader'}
+        component={EpubReader}
+        options={{headerShown: false}}
       />
     </Stack.Navigator>
   );

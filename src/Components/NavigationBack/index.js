@@ -1,7 +1,7 @@
 import React from 'react';
 import {TouchableOpacity, Image} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import BackIcon from '../../assets/arrow_left.png';
+import BackIcon from '../../assets/chevron_left.png';
 import styles from './style';
 
 const NavigationBack = React.memo(props => {

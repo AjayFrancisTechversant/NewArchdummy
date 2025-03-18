@@ -12,7 +12,7 @@ import React, {useState} from 'react';
 import {FlashList} from '@shopify/flash-list';
 
 // New HeavyItem component
-const HeavyItem = ({title}) => {
+const HeavyItem = ({title}: {title: string}) => {
   const [isEnabled, setIsEnabled] = useState(false);
   const [modalVisible, setModalVisible] = useState(false);
 

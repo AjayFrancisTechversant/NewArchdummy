@@ -16,6 +16,17 @@ const HomeScreen = ({navigation}: any) => {
         onPress={() => navigation.navigate('ListScreen')}>
         <Text style={{color: 'white'}}>go to lists</Text>
       </TouchableOpacity>
+      <TouchableOpacity
+        style={{
+          margin: 100,
+          backgroundColor: 'blue',
+          borderRadius: 10,
+          padding: 10,
+          alignItems: 'center',
+        }}
+        onPress={() => navigation.navigate('EpubReader')}>
+        <Text style={{color: 'white'}}>go to EpubReader</Text>
+      </TouchableOpacity>
     </View>
   );
 };
